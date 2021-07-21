@@ -1,0 +1,23 @@
+{
+  "name": "hummingroster",
+  "version": "1.0.0",
+  "description": "slack bot for managing roster",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node .\\dist\\app.js",
+    "build": "tsc -p .",
+    "dev": "nodemon .\\src\\app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.4.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  }
+}
